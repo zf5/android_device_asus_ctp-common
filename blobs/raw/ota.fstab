@@ -1,0 +1,3 @@
+/dev/block/by-name/boot	/boot	osip	none	defaults
+/dev/block/by-name/recovery	/recovery	osip	none	defaults
+/dev/block/mmcblk0p9	/system	ext4	rw,noatime	wait
