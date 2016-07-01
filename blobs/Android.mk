@@ -17,13 +17,3 @@ LOCAL_MODULE_OWNER := system
 LOCAL_REQUIRED_MODULES :=
 LOCAL_SHARED_LIBRARIES :=
 include $(BUILD_PREBUILT)
-
-# upi_ug31xx
-# ============================================================
-include $(CLEAR_VARS)
-LOCAL_MODULE := upi_ug31xx
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_CLASS := EXECUTABLE
-LOCAL_SRC_FILES    := upi_ug31xx/upi_ug31xx
-LOCAL_MODULE_PATH  := $(TARGET_OUT_EXECUTABLES)
-include $(BUILD_PREBUILT)

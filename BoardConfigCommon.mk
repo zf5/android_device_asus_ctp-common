@@ -54,10 +54,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/ctp-common/bluetooth
 BOARD_SKIP_ANDROID_DOC_BUILD := true
 BUILD_EMULATOR := false
 
-# Charger
+# Offline Charing Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/asus/ctp-common/charger/images
 
 # Dex-preoptimization: Speeds up initial boot
 WITH_DEXPREOPT := true
@@ -113,9 +111,6 @@ BOARD_PROVIDES_LIBRIL := true
 
 # Font
 EXTENDED_FONT_FOOTPRINT := true
-
-# Double-Tap-To-Wake
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/pci0000:00/0000:00:00.3/i2c-0/0-0020/input/input1/dclick_mode"
 
 # StageFright
 BUILD_WITH_FULL_STAGEFRIGHT := true

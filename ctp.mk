@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
 	msvdx_bin \
 	topaz_bin
 
-# PowerHAL
-PRODUCT_PACKAGES += \
-	power.clovertrail
-
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.status.polling.enable=0 \
