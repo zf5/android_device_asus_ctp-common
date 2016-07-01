@@ -60,9 +60,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # Dex-preoptimization: Speeds up initial boot
 WITH_DEXPREOPT := true
 
-# Hardware
-BOARD_HARDWARE_CLASS += device/asus/ctp-common/cmhw
-
 # Healthd
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.clovertrail
 
