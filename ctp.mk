@@ -20,9 +20,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 DEVICE_PACKAGE_OVERLAYS += \
 	device/asus/ctp-common/overlay
 
-#Prebuilt bzImage (needed for otapackage)
-TARGET_PREBUILT_KERNEL:=device/asus/ctp-common/blobs/raw/kernel
-
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.dex2oat-swap=false
