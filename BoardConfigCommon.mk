@@ -54,11 +54,16 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/ctp-common/bluetooth
 BOARD_SKIP_ANDROID_DOC_BUILD := true
 BUILD_EMULATOR := false
 
-# Offline Charing Mode
+# Offline Charging Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Dex-preoptimization: Speeds up initial boot
 WITH_DEXPREOPT := true
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_ctp
+TARGET_LIBINIT_DEFINES_FILE := device/asus/ctp-common/init/init_ctp.cpp
+TARGET_INIT_UMOUNT_AND_FSCK_IS_UNSAFE := true
 
 # Healthd
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.clovertrail
@@ -123,6 +128,7 @@ INTEL_VA := true
 BOARD_USE_LIBVA := true
 BOARD_USE_LIBVA_INTEL_DRIVER := true
 USE_INTEL_SECURE_AVC := true
+BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
 
 # Intel Moorestown Mix Library
 BOARD_USE_LIBMIX := true

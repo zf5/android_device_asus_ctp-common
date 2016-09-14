@@ -50,6 +50,15 @@ PRODUCT_PACKAGES += \
 	Snap \
 	bspcapability
 
+# Charger
+PRODUCT_PACKAGES += \
+	charger \
+	charger_res_images
+
+# PowerHAL
+PRODUCT_PACKAGES += \
+	power.redhookbay
+
 # Health Deamon
 PRODUCT_PACKAGES += \
 	libhealthd.clovertrail \
